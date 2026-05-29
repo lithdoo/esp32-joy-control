@@ -12,7 +12,7 @@ fn main() -> anyhow::Result<()> {
     let mut joy_button = PinDriver::input(peripherals.pins.gpio0)?;
     joy_button.set_pull(Pull::Up)?;
 
-    log::info!("simple-joy-control started on ESP32");
+    log::info!("simple-joy-control started on ESP32-S3");
     log::info!("Joystick button configured on GPIO {JOY_BUTTON_GPIO}");
 
     loop {
